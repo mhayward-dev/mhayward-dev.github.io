@@ -1,0 +1,118 @@
+body{
+    height: 5000px;
+}
+
+/* Buttons */
+
+button.primary {
+    background-color: #bc1a7a;
+    padding: 5px 15px 5px 15px;
+}
+button.primary a {
+    text-decoration: none;
+    color: white;
+}
+
+/* Banner */
+
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.banner {
+    height: 75px;
+    border-bottom: #bc1a7a 2px solid;
+    background-color: white;
+}
+
+.banner .inner {
+    padding-top: 5px;
+}
+
+.banner .logo {
+    float: left;
+    margin-left: 5px;
+    height: 60px;
+}
+
+.title-wrapper {
+    float: left;
+    margin-left: 10px;
+}
+
+.title-wrapper .title {
+    position: absolute;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.title-wrapper .sub-title {
+    position: absolute;
+    font-size: 16px;
+    top: 30px;
+}
+
+.banner button {
+    float: right;
+    margin-right: 5px;
+    margin-top: 12px;
+}
+
+@media only screen and (max-width: 768px) {
+
+ .banner {
+     height: 60px;
+ }
+ .banner .logo {
+     height: 40px;
+     margin-top: 5px;
+ }
+ .banner button {
+     margin-top: 8px;
+     margin-left: 0;
+ }
+}
+
+/* Intro */
+
+.hero-image {
+    background-image: url(../images/MtFuji.jpg);
+    display: block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+    border-radius: 0px;
+    width: 100%;
+    height: 600px;
+    position: relative;
+  }
+
+  .hero-image .inner {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+
+  .hero-image .panel {
+      background-color: #ffffff8f;
+      height: 200px;
+      width: 500px;
+      border-radius: 10px;
+      padding: 15px;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+  }
+
+  .hero-image .title {
+      font-size: 25px;
+      font-weight: bold;
+  }
