@@ -38,19 +38,29 @@ nav .brand-logo {
 
 /* bio */
 
+.bio-desktop {
+    display: none;
+    margin-top: 25px;
+}
+
+.bio-mobile {
+    margin-top: 25px;
+}
+
 .bio-name {
     font-size: 2rem;
+    margin: 0;
 }
 
 .bio-titles {
     font-size: 1.5rem;
 }
 
-.bio-profile-image {
+.bio-desktop .bio-profile-image {
     position: absolute;
     height: 100px !important;
     left: 15px;
-    top: 100px;
+    top: 85px;
 }
 
 .bio-parallax {
@@ -59,6 +69,11 @@ nav .brand-logo {
 }
 
 @media only screen and (min-width: 768px) {
-
+    .bio-desktop {
+        display: block;
+    }
+    .bio-mobile {
+        display: none;
+    }
 }
 
