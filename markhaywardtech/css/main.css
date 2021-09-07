@@ -1,0 +1,64 @@
+@font-face {
+    font-family: "Roboto-Regular";
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+@font-face {
+    font-family: "Roboto-Bold";
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+* {
+    font-family: "Roboto-Regular";
+}
+
+/* helper classes */
+
+.bold {
+    font-family: "Roboto-Bold";
+}
+
+.page-title {
+    font-size: 1.5rem;
+}
+
+/* nav */
+
+nav {
+    background-color: #fff;
+    box-shadow: none;
+}
+
+nav li a, nav .brand-logo, .sidenav-trigger i {
+    color: #000;
+}
+
+nav .brand-logo {
+    font-size: 1.5rem;
+}
+
+/* bio */
+
+.bio-name {
+    font-size: 2rem;
+}
+
+.bio-titles {
+    font-size: 1.5rem;
+}
+
+.bio-profile-image {
+    position: absolute;
+    height: 100px !important;
+    left: 15px;
+    top: 100px;
+}
+
+.bio-parallax {
+    top: 10px;
+    height: 300px;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
+
