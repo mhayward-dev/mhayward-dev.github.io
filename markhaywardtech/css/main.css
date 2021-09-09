@@ -3,12 +3,39 @@
     src: url(../fonts/Roboto-Regular.ttf);
 }
 @font-face {
+    font-family: "Roboto-Light";
+    src: url(../fonts/Roboto-Light.ttf);
+}
+@font-face {
     font-family: "Roboto-Bold";
     src: url(../fonts/Roboto-Bold.ttf);
 }
+@font-face {
+    font-family: "BebasNeue-Regular";
+    src: url(../fonts/BebasNeue-Regular.ttf);
+}
 
-* {
-    font-family: "Roboto-Regular";
+/* base */
+
+h1 {
+    font-family: "BebasNeue-Regular";
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+h2 {
+    font-family: "BebasNeue-Regular";
+    font-size: 2rem;
+    margin: 0;
+}
+
+h3 {
+    font-family: "Roboto-Bold";
+    margin: 0;
+}
+
+p {
+    font-size: 1.5rem;
 }
 
 /* helper classes */
@@ -22,57 +49,58 @@
 }
 
 /* nav */
-
-nav {
-    background-color: #fff;
-    box-shadow: none;
-}
-
-nav li a, nav .brand-logo, .sidenav-trigger i {
-    color: #000;
-}
-
-nav .brand-logo {
-    font-size: 1.5rem;
+nav, #mobile-nav {
+    font-family: "Roboto-Bold";
 }
 
 /* bio */
 
-.bio-desktop {
+.bio-header-desktop {
     display: none;
-    margin-top: 25px;
+    margin: 45px 0;
 }
 
-.bio-mobile {
-    margin-top: 25px;
+.bio-header-mobile {
+    margin: 25px 0;
 }
 
 .bio-name {
-    font-size: 2rem;
+    font-family: "BebasNeue-Regular";
+    font-size: 3rem;
     margin: 0;
 }
 
 .bio-titles {
-    font-size: 1.5rem;
+    font-family: "Roboto-Light";
+    font-size: 2rem;
+    margin: 15px 0;
 }
 
-.bio-desktop .bio-profile-image {
+.bio-header-desktop .bio-profile-image {
     position: absolute;
-    height: 100px !important;
-    left: 15px;
-    top: 85px;
+    height: 115px !important;
+    left: 20px;
+    top: 115px;
 }
 
-.bio-parallax {
-    top: 10px;
+.bio-divider {
     height: 300px;
 }
 
+.bio-intro {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.social-icon {
+    width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
-    .bio-desktop {
+    .bio-header-desktop {
         display: block;
     }
-    .bio-mobile {
+    .bio-header-mobile {
         display: none;
     }
 }
