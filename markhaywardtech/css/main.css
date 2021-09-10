@@ -39,7 +39,16 @@ h3 {
 }
 
 p {
+    font-family: "Roboto-Light";
     font-size: 1.5rem;
+}
+
+a {
+    color: #304ffe;
+}
+
+.row {
+    margin-bottom: 0;
 }
 
 /* helper classes */
@@ -52,10 +61,19 @@ p {
     font-size: 1.5rem;
 }
 
+.section {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.banner-image {
+    height: 300px;
+}
+
 /* nav */
 
 nav, #mobile-nav {
-    font-family: "Roboto-Bold";
+    font-family: "Roboto-Regular";
 }
 
 /* bio */
@@ -88,21 +106,11 @@ nav, #mobile-nav {
     top: 115px;
 }
 
-.bio-divider {
-    height: 300px;
-}
-
-.bio-intro {
-    margin-top: 25px;
-    margin-bottom: 25px;
-}
-
 /* socials */
 
 .bio-social {
-    color: white;
+    color: #FFF;
     padding: 25px 0;
-    margin: 20px 0;
 }
 
 .bio-social-header {
@@ -120,11 +128,28 @@ nav, #mobile-nav {
     padding: 20px 20px;  
 }
 
+.a-unsplash img {
+    width: 120px;
+    margin: 10px;
+}
+
 .bio-social-name {
     font-family: "Roboto-Thin";
     text-align: center;
     font-size: 1.8rem;
     width: 100%;
+}
+
+/* footer */
+
+footer {
+    font-family: "Roboto-Regular";
+    font-size: 1.2rem;
+    color: #FFF;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px #FFF solid;
 }
 
 @media only screen and (min-width: 768px) {

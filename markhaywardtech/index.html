@@ -29,18 +29,18 @@
 </head>
 
 <header>
-    <nav>
-        <div class="nav-wrapper indigo accent-4">
+    <nav class="indigo accent-4">
+        <div class="nav-wrapper">
             <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="left hide-on-med-and-down">
-                <li class="active"><a href="index.html" class="text-white">about me</a></li>
-                <li><a href="#" class="text-white">resume</a></li>
-                <li><a href="photography.html" class="text-white">photography</a></li>
+                <li class="active"><a href="index.html">about me</a></li>
+                <li><a href="#">resume</a></li>
+                <li><a href="photography.html">photography</a></li>
             </ul>
         </div>
     </nav>
 
-    <ul class="sidenav indigo lighten-5" id="mobile-nav">
+    <ul class="sidenav" id="mobile-nav">
         <li><a href="index.html">about me</a></li>
         <li><a href="#">resume</a></li>
         <li><a href="photography.html">photography</a></li>
@@ -71,23 +71,26 @@
         <img src="images/markhayward.jpg" alt="Mark Hayward" class="bio-profile-image circle responsive-img">
     </div>
 
-    <div class="bio-divider parallax-container">
+    <div class="banner-image parallax-container">
         <div class="parallax"><img src="images/soho.jpg"></div>
     </div>
 
-    <div class="bio-intro container">
+    <div class="section container">
         <div class="row">
             <div class="col s12">
-                <p>I'm Mark, a software engineer based in London. I've been working in digital agencies for around 4
-                    years now and I have a passion for making technology that changes people's lives. </p>
-                <p>This is why I have primarily focused on the charity sector whilst working in an agency. Through a
-                    well constructed serverside and elegant UI, I was amazed at how much enhanced technology could
-                    change the way a user
-                    interacts with your app.</p>
+                <p>I'm Mark, a software engineer based in London. I have over 10 years experience in this space, working
+                    in fullstack web development and also in native app development.
+                    Recently I have worked for 4 years in two digital agencies. </p>
+                <p>I have primarily focused on the charity sector whilst working in these agencies. It has been amazing
+                    to see the impact a
+                    well constructed serverside and elegant UI, can positively change the way a user interacts with your
+                    app.</p>
                 <p>In this way, charities have been able to reach a lot more donators and provide better financial
                     support for those who are vulnerable and in need of vital care.</p>
                 <p>In whatever I decide to do in the future, my desire is to always push the boundaries with new and
                     exciting technology.</p>
+                <p>I also enjoy learning the art of brewing great coffee, and I am a <a
+                        href="https://www.last.fm/user/mhayward10" target="_blank">big music fan</a>.</p>
             </div>
         </div>
     </div>
@@ -96,13 +99,13 @@
         <h2 class="bio-social-header center">My work</h2>
         <div class="bio-social-icon-container">
             <div class="bio-social-icon">
-                <a href="https://github.com/mhayward-dev" target="_blank">
+                <a class="a-github" href="https://github.com/mhayward-dev" target="_blank">
                     <img src="images/icons/github-white-icon.svg" alt="Github" />
                 </a>
                 <div class="bio-social-name">Github</div>
             </div>
             <div class="bio-social-icon">
-                <a href="https://unsplash.com/@mhayward" target="_blank">
+                <a class="a-unsplash" href="https://unsplash.com/@mhayward" target="_blank">
                     <img src="images/icons/unsplash-white-icon.svg" alt="Unsplash" />
                 </a>
                 <div class="bio-social-name">Unsplash</div>
@@ -110,8 +113,21 @@
         </div>
     </div>
 
+    <div class="banner-image parallax-container">
+        <div class="parallax"><img src="images/soho.jpg"></div>
+    </div>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script type="text/javascript" src="js/main.js"></script>
 </body>
+
+<footer class="light-blue">
+    <div>
+        © 2021 Mark Hayward
+    </div>
+    <div class="footer-socials">
+        
+    </div>
+</footer>
 
 </html>
