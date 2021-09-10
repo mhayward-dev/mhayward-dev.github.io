@@ -31,6 +31,14 @@ body.theme-dark {
     background-color: #3a4556;
 }
 
+.theme-dark #mobile-nav {
+    background-color: #3a4556;
+}
+
+.theme-dark #mobile-nav li a {
+    color: #fff;
+}
+
 .theme-dark .banner-solid-colour {
     background-color: #3a4556;
 }

@@ -257,8 +257,12 @@ footer {
     display: block;
 }
 
-.footer-socials {
+.footer-copyright {
     margin-top: 20px;
+}
+
+.footer-socials {
+    margin: 20px 0;
 }
 
 footer .icon {
@@ -328,6 +332,10 @@ footer .icon.instagram {
     }
 
     .footer-socials {
-        margin-top: 0px;
+        margin: 0px;
+    }
+
+    .footer-copyright {
+        margin: 0;
     }
 }
