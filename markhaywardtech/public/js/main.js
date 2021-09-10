@@ -2,7 +2,7 @@ function setupTheme(theme) {
   if (theme === null) {
     // first time arriving, no theme set.
     // check for OS setting for dark theme, otherwise set default of light.
-    const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
     theme = prefersDarkScheme.matches ? 'dark' : 'light';
   }
 
@@ -29,8 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
   M.Parallax.init(parallax, {});
 
   // toggle light / dark theme
-  const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)");
-  const currentTheme = localStorage.getItem("theme");
+  const currentTheme = localStorage.getItem('theme');
   const bodyEl = document.querySelector('body');
   const btnToggleSchemeEls = document.querySelectorAll('.btn-toggle-scheme');
 
