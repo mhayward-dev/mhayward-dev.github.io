@@ -43,8 +43,12 @@ p {
     font-size: 1.5rem;
 }
 
-a {
+p a {
     color: #304ffe;
+}
+
+p a:hover {
+    text-decoration: underline;
 }
 
 .row {
@@ -120,24 +124,45 @@ nav, #mobile-nav {
 .bio-social-icon-container {
     display: flex;
     justify-content: center;
-
 }
 
 .bio-social-icon {
-    width: 180px;
-    padding: 20px 20px;  
+    width: 150px;
+    height: 150px;
 }
 
-.a-unsplash img {
-    width: 120px;
-    margin: 10px;
+.bio-social-icon a {
+    display: block;
+    color: white;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top: 10px;
+}
+.bio-social-icon a:hover {
+    background-color: rgba(0,0,0,0.1);
+    text-decoration: none;
+}
+
+.bio-social-icon .icon.github {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.bio-social-icon .icon.unsplash {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 .bio-social-name {
     font-family: "Roboto-Thin";
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     width: 100%;
+    display: block;
 }
 
 /* footer */
@@ -145,19 +170,106 @@ nav, #mobile-nav {
 footer {
     font-family: "Roboto-Regular";
     font-size: 1.2rem;
-    color: #FFF;
+    color: #fff;
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    border-top: 2px #FFF solid;
+    display: block;
+}
+
+.footer-socials {
+    margin-top: 20px;
+}
+
+footer .icon {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    margin-right: 15px;
+}
+
+footer .icon:hover{
+    border: 1px #fff solid;
+}
+
+footer .icon.github {
+    background-position-y: 1px;
+    background-size: 90%;
+    background-position-x: 2px;
+}
+footer .icon.unsplash {
+    background-position-y: 4px;
+    background-size: 70%;
+    background-position-x: 6px;
+}
+footer .icon.email {
+    background-position-y: 6px;
+    background-size: 70%;
+    background-position-x: 6px;
+}
+footer .icon.linkedin {
+    background-position-y: 7px;
+    background-size: 65%;
+    background-position-x: 7px;
+}
+footer .icon.twitter {
+    background-position-y: 7px;
+    background-size: 65%;
+    background-position-x: 7px;
+}
+footer .icon.instagram {
+    background-position-y: 6px;
+    background-size: 65%;
+    background-position-x: 7px;
 }
 
 @media only screen and (min-width: 768px) {
     .bio-header-desktop {
         display: block;
     }
+
     .bio-header-mobile {
         display: none;
     }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer-socials {
+        margin-top: 0px;
+    }
+}
+
+/* icons */
+
+.github {
+    background-image: url("../images/icons/icon-github.svg");
+    background-repeat: no-repeat;
+}
+
+.unsplash {
+    background-image: url("../images/icons/icon-unplash.svg");
+    background-repeat: no-repeat;
+}
+
+.email {
+    background-image: url("../images/icons/icon-email.svg");
+    background-repeat: no-repeat;
+}
+
+.twitter {
+    background-image: url("../images/icons/icon-twitter.svg");
+    background-repeat: no-repeat;
+}
+
+.instagram {
+    background-image: url("../images/icons/icon-instagram.svg");
+    background-repeat: no-repeat;
+}
+
+.linkedin {
+    background-image: url("../images/icons/icon-linkedin.svg");
+    background-repeat: no-repeat;
 }
 
