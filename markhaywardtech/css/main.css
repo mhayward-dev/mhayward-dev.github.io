@@ -7,6 +7,10 @@
     src: url(../fonts/Roboto-Light.ttf);
 }
 @font-face {
+    font-family: "Roboto-Thin";
+    src: url(../fonts/Roboto-Thin.ttf);
+}
+@font-face {
     font-family: "Roboto-Bold";
     src: url(../fonts/Roboto-Bold.ttf);
 }
@@ -49,6 +53,7 @@ p {
 }
 
 /* nav */
+
 nav, #mobile-nav {
     font-family: "Roboto-Bold";
 }
@@ -92,7 +97,33 @@ nav, #mobile-nav {
     margin-bottom: 25px;
 }
 
-.social-icon {
+/* socials */
+
+.bio-social {
+    color: white;
+    padding: 25px 0;
+    margin: 20px 0;
+}
+
+.bio-social-header {
+    margin-bottom: 10px;
+}
+
+.bio-social-icon-container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.bio-social-icon {
+    width: 180px;
+    padding: 20px 20px;  
+}
+
+.bio-social-name {
+    font-family: "Roboto-Thin";
+    text-align: center;
+    font-size: 1.8rem;
     width: 100%;
 }
 
