@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/theme-light.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
 
     <link rel="apple-touch-icon" sizes="57x57" href="images/icons/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="images/icons//apple-icon-60x60.png">
@@ -35,9 +35,19 @@
             <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
                 <li class="active"><a href="index.html">about me</a></li>
-                <li><a href="#">resume</a></li>
+                <li><a href="resume.html">resume</a></li>
                 <li><a href="photography.html">photography</a></li>
+                <li>
+                    <button class="btn-toggle-scheme">
+                        <span class="icon moon"></span>
+                    </button>
+                </li>
             </ul>
+            <div class="right hide-on-med-and-up show-on-medium-and-down">
+                <button class="btn-toggle-scheme">
+                    <span class="icon moon"></span>
+                </button>
+            </div>
         </div>
     </nav>
 
@@ -48,7 +58,7 @@
     </ul>
 </header>
 
-<body>
+<body class="theme-light">
     <div class="bio-header-mobile">
         <div class="container">
             <div class="row">
